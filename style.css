@@ -3,7 +3,9 @@
 :root {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    --sidebar: #0ea5e9;
+    --sidebar: #0284c7;
+    --icon: invert(1);
+    box-sizing: border-box;
 }
 
 .container {
@@ -19,29 +21,57 @@
     background-color: var(--sidebar);
     color: white;
     font-weight: 500;
+    padding: 10px;
 }
 
 .header {
     grid-area: header;
+    padding: 40px;
 }
 
 .nav {
     grid-area: nav;
+    padding: 40px;
 }
 
 .main {
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding: 20px;
 }
 
 /* Sidebar */
-.sidebar .textitem {
+.sidebar img {
+    filter: var(--icon);
+}
+
+.sidebar h1 {
     font-size: 1.5rem;
 }
 .sidebar ul {
     list-style: none;
+    padding: 0;
 }
+
+.menu1 img,
+.menu2 img {
+    height: auto;
+    width: 24px;
+    place-self: center;
+}
+
+.logo, 
+.menu1>ul,
+.menu2>ul {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 5px;
+    justify-items: start;
+    align-items: center;
+}
+
+
 
 /* Main content */
 .projects {
