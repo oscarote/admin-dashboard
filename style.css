@@ -46,7 +46,7 @@ body {
     background-color: var(--main);
     grid-area: main;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     padding: 20px;
 }
 
@@ -269,6 +269,42 @@ button:active {
     font-weight: 500;
     color: black;
     margin: 0;   
+}
+
+/* Trending */
+.gridaccount {
+    background-color: var(--boxes);
+    border-radius: 10px;
+    display: grid;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.gridaccount .account {
+    display: flex;
+    gap: 1rem;
+}
+
+.account img {
+    height: auto;
+    width: 3rem;
+    place-self: center;
+}
+
+.usertext {
+    align-self: center;
+}
+
+.useracc {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+}
+
+.username {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: rgb(80, 80, 80);
 }
 
 /* Footer */
