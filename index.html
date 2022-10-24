@@ -12,23 +12,26 @@
 <body>
     <div class="container">
         <div class="header">
-            <input type="search" name="search" id="search">
-            <div class="notification"></div>
+            <div class="search">
+                <img src="./img/magnify.svg" alt="Search icon">
+                <input type="search" name="search" id="search">
+            </div>
             <div class="perfil">
-                <div class="usericon"></div>
+                <img src="./img/bell-ring.svg" alt="Notification icon">
+                <img src="./img/avatar2.svg" alt="Logged user avatar" class="smallavatar">
                 <div class="user">Morgan Oakley</div>
             </div>
-        </div>
 
-        <div class="nav">
-            <div class="userinfo">
-                <div class="usericon"></div>
+            <div class="welcome">
+                <img src="./img/avatar2.svg" alt="Logged user avatar" class="bigavatar">
                 <div class="welcomemsg">Hi there,</div>
-                <div class="user">Morgan Oakley</div>
+                <div class="welcomeuser">Morgan Oakley (@morgan)</div>
             </div>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+            <div class="buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
         </div>
 
         <div class="sidebar">
@@ -38,20 +41,35 @@
             </div>
             <div class="menu1">
                 <ul>
-                    <img src="./img/home.svg" alt="Home icon"><li>Home</li>
-                    <img src="./img/account-box.svg" alt="Profile icon"><li>Profile</li>
-                    <img src="./img/message-reply.svg" alt="Messages icon"><li>Messages</li>
-                    <img src="./img/history.svg" alt="History icon"><li>History</li>
-                    <img src="./img/file-multiple.svg" alt="Tasks icon"><li>Tasks</li>
-                    <img src="./img/account-group.svg" alt="Communities icon"><li>Communities</li>
+                    <img src="./img/home.svg" alt="Home icon">
+                    <li>Home</li>
+                    <img src="./img/account-box.svg" alt="Profile icon">
+                    <li>Profile</li>
+                    <img src="./img/message-reply.svg" alt="Messages icon">
+                    <li>Messages</li>
+                    <img src="./img/history.svg" alt="History icon">
+                    <li>History</li>
+                    <img src="./img/file-multiple.svg" alt="Tasks icon">
+                    <li>Tasks</li>
+                    <img src="./img/account-group.svg" alt="Communities icon">
+                    <li>Communities</li>
                 </ul>
             </div>
             <div class="menu2">
                 <ul>
-                    <img src="./img/cog.svg" alt="Settings icon"><li>Settings</li>
-                    <img src="./img/face-agent.svg" alt="Support icon"><li>Support</li>
-                    <img src="./img/shield-check.svg" alt="Privacy icon"><li>Privacy</li>
+                    <img src="./img/cog.svg" alt="Settings icon">
+                    <li>Settings</li>
+                    <img src="./img/face-agent.svg" alt="Support icon">
+                    <li>Support</li>
+                    <img src="./img/shield-check.svg" alt="Privacy icon">
+                    <li>Privacy</li>
                 </ul>
+            </div>
+            <div class="footer">
+                Copyright ©
+                <script>document.write(new Date().getFullYear())</script> <a href="https://github.com/oscarote"
+                    target="_blank">
+                    Oscarote</a>
             </div>
         </div>
 
@@ -66,23 +84,31 @@
                     </div>
                     <div class="card">
                         <p class="title">Less Cool Project</p>
-                        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et. facilisis dolor. Duis sem purus, dignissim ut sapien In, varius pellentesque lacus</p>
+                        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt,
+                            consectetur
+                            sapien et. facilisis dolor. Duis sem purus, dignissim ut sapien In, varius pellentesque
+                            lacus
+                        </p>
                     </div>
                     <div class="card">
                         <p class="title">Imposible App</p>
-                        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.
+                        </p>
                     </div>
                     <div class="card">
                         <p class="title">Easy Peasy App</p>
-                        <p>Etiam cursus eros ac efticitur tringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt</p>
+                        <p>Etiam cursus eros ac efticitur tringilla. Vestibulum dignissim urna eget accumsan aliquam.
+                            Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt</p>
                     </div>
                     <div class="card">
                         <p class="title">Ad Blocker</p>
-                        <p>Quisque eget rutrum nisl. Nam augue justo. cursus vitae metus ve. pharetra hendrerit felis. Aliguam sed malesuade eros.</p>
+                        <p>Quisque eget rutrum nisl. Nam augue justo. cursus vitae metus ve. pharetra hendrerit felis.
+                            Aliguam sed malesuade eros.</p>
                     </div>
                     <div class="card">
                         <p class="title">Money Maker</p>
-                        <p>Praesent convallis, llbero quis congue elementum. nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex Pellentesque mollis nec sem vel allauam.</p>
+                        <p>Praesent convallis, llbero quis congue elementum. nunc ante faucibus sapien, ac scelerisque
+                            tortor purus sit amet ex Pellentesque mollis nec sem vel allauam.</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +117,9 @@
                 <h3>Announcements</h3>
                 <div class="annitem">
                     <p class="title">Site Maintenance</p>
-                    <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendreric sodales congue...</p>
+                    <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendreric sodales
+                        congue...
+                    </p>
                 </div>
                 <div class="annitem">
                     <p class="title">Community Share Day</p>
@@ -99,7 +127,9 @@
                 </div>
                 <div class="annitem">
                     <p class="title">Updated Privacy Policy</p>
-                    <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilia sagitis sem in mattis...</p>
+                    <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilia
+                        sagitis
+                        sem in mattis...</p>
                 </div>
             </div>
 
@@ -113,7 +143,7 @@
                     </div>
                 </div>
                 <div class="account">
-                    <div class="usericon"></div>
+                    <img src="./img/avatar2.svg" alt="Logged user avatar" class="smallavatar">
                     <div class="usertext">
                         <div class="useracc">@morgan</div>
                         <div class="username">Super Cool Project</div>
