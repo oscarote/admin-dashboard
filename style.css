@@ -22,6 +22,7 @@ body {
     grid-template-areas: "sidebar header"
         "sidebar main";
     grid-template-columns: minmax(200px, 1fr) 8fr;
+    grid-template-rows: auto 1fr;
 }
 
 .sidebar {
