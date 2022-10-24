@@ -6,6 +6,9 @@
     --sidebar: #0284c7;
     --icon: invert(1);
     --header: #f0f9ff;
+    --main: #e0f2fe;
+    --boxes: white;
+    --leftboxcolor: #0c4a6e;
     box-sizing: border-box;
 }
 
@@ -40,6 +43,7 @@ body {
 }
 
 .main {
+    background-color: var(--main);
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -192,9 +196,51 @@ button:active {
 
 /* Projects */
 .gridcard {
+    padding-right: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
+}
+
+.card {
+    background-color: var(--boxes);
+    display: grid;
+    grid-template-columns: 4% 1fr;
+    border-radius: 10px;
+    gap: 0.2rem 1.2rem;
+    padding-right: 1rem;
+}
+
+.card p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(80, 80, 80);
+}
+
+.card .title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 0;   
+}
+
+.leftcard {
+    grid-area: 1 / 1 / 4 / 2;
+    background-color: var(--leftboxcolor);
+    border-radius: 10px 0 0 10px;;
+}
+
+.iconblock {
+    justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.3rem;
+    padding-bottom: 1rem;
+}
+
+.iconblock img {
+    height: auto;
+    width: 1.5rem;
 }
 
 /* Footer */
